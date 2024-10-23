@@ -1,25 +1,39 @@
 {
-  "name": "u",
-  "version": "1.0.0",
-  "description": "1",
-  "main": "1",
+  "name": "stingee",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
     "dev": "vite",
-
-    "build": "vite build", 
-    "vercel-build": "vite build" 
-
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "1"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [
-    "1"
-  ],
-  "author": "1",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "author": "",
+  "main": "index.js",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^5.4.9"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.11"
   }
 }
