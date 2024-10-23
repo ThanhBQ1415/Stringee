@@ -11,7 +11,9 @@ const vm = new Vue({
   },
   computed: {
     roomUrl: function() {
-      return `http://${location.hostname}:8081?room=${this.roomId}`;
+
+      // return `http://${location.hostname}:8081?room=${this.roomId}`
+      return `https://stringee.vercel.app/=${this.roomId}`
     }
   },
   async mounted() {
