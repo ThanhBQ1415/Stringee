@@ -11,9 +11,7 @@ const vm = new Vue({
   },
   computed: {
     roomUrl: function() {
-      return `https://stringee.vercel.app/api?room=${this.roomId}`;
-      // return `http://${location.hostname}:8081?room=${this.roomId}`
-
+      return `http://${location.hostname}:8081?room=${this.roomId}`
     }
   },
   async mounted() {
@@ -31,7 +29,7 @@ const vm = new Vue({
     authen: function() {
       return new Promise(async resolve => {
         const userId = `${(Math.random() * 100000).toFixed(6)}`;
-        const userToken = await api.getUserToken(userId,'https://stringee.vercel.app');
+        const userToken = await api.getUserToken(userId, `http://${location.hostname}:8081?room=${this.roomId}`);
         this.userToken = userToken;
 
         if (!this.callClient) {
