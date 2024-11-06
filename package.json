@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copyfiles -u 1 api.js script.js dist/",
+    "build": "vite build ",
     "preview": "vite preview"
   },
   "eslintConfig": {
