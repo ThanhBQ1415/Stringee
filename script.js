@@ -85,7 +85,7 @@ const vm = new Vue({
     authen: function() {
       return new Promise(async resolve => {
         const userId = `${(Math.random() * 100000).toFixed(6)}`;
-        const userToken = await api.getUserToken(userId, `http://${location.hostname}:8081?room=${  this.displayRoomId}`);
+        const userToken = await api.getUserToken(userId, `http://${location.hostname}:8081?room=${this.displayRoomId}`);
         this.userToken = userToken;
 
         if (!this.callClient) {
