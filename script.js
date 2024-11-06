@@ -38,8 +38,8 @@ const videoContainer = document.querySelector("#videos");
 
 
 
-const PROJECT_ID = "SK.0.TnRwOQjOmvs3Fl9TFP3yfIN0jEbnjyQF";
-const PROJECT_SECRET = "UDdXVmdCbjBHQU9ZUUF5T053NjNXZndWWHdNeUNaaHY=";
+const PROJECT_ID = "SK.0.voZxMHRDblsAoh7dku3fbUxdkm8rC1qI";
+const PROJECT_SECRET = "bzNvTVBGTlAydWdxd3Z3OHhpUnR5OHI5WkdxMjRTRkY=";
 const BASE_URL = "https://api.stringee.com/v1/room2";
 
 
